@@ -1,36 +1,12 @@
 # Implementação do algoritmo GOAP
 
-O Planejamento Orientado a Objetivos, GOAP (Goal-Oriented Action Planning), é um
-
-algoritmo utilizado na área de inteligência artificial para jogos, que visa aprimorar a tomada
- 
-de decisões dos personagens não jogáveis (NPCs) dentro do ambiente do jogo.
-
-Desenvolvido para lidar com situações dinâmicas e complexas, o GOAP proporciona uma
- 
-abordagem flexível e eficiente para a criação de comportamentos autônomos e adaptativos.
+O Planejamento Orientado a Objetivos, GOAP (Goal-Oriented Action Planning), é um algoritmo utilizado na área de inteligência artificial para jogos, que visa aprimorar a tomada de decisões dos personagens não jogáveis (NPCs) dentro do ambiente do jogo. Desenvolvido para lidar com situações dinâmicas e complexas, o GOAP proporciona uma abordagem flexível e eficiente para a criação de comportamentos autônomos e adaptativos.
 
 
-A base do GOAP reside na definição de objetivos que o NPC deve alcançar e na 
-
-construção de um plano de ação para atingir esses objetivos. Cada ação é associada a um 
-
-conjunto de pré-condições e efeitos, permitindo que o algoritmo avalie quais ações são mais 
-
-adequadas para alcançar um determinado objetivo em um determinado contexto.
+A base do GOAP reside na definição de objetivos que o NPC deve alcançar e na construção de um plano de ação para atingir esses objetivos. Cada ação é associada a um conjunto de pré-condições e efeitos, permitindo que o algoritmo avalie quais ações são mais adequadas para alcançar um determinado objetivo em um determinado contexto.
 
 
-A abordagem GOAP permite uma maior flexibilidade que outras técnicas como 
-
-máquinas de estado-finito, pois todas as ações são separadas umas das outras e 
-
-mudanças em uma ação não vão influenciar outras ações diretamente. Em vez disso, as 
-
-ações da abordagem GOAP dependem apenas de suas condições e estados (do mundo e 
-
-do personagem), assim, um mesmo objetivo pode precisar de dois planos de ação 
-
-diferentes para personagens com estados diferentes ou estados de mundo diferentes.
+A abordagem GOAP permite uma maior flexibilidade que outras técnicas como máquinas de estado-finito, pois todas as ações são separadas umas das outras e mudanças em uma ação não vão influenciar outras ações diretamente. Em vez disso, as ações da abordagem GOAP dependem apenas de suas condições e estados (do mundo e do personagem), assim, um mesmo objetivo pode precisar de dois planos de ação diferentes para personagens com estados diferentes ou estados de mundo diferentes.
 
 # Modelo
 
