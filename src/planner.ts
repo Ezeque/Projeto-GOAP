@@ -88,13 +88,8 @@ export function definePlan(
 
   // 1º no da fila é o estado objetivo (goal). A busca será do no final em direção ao inicial.
   queue.push(new Node(goal, 0, distance(goal, initial)))
-
   while (!queue.isEmpty()) {
     const currNode = queue.pop() as Node
-    /* console.log("Estado Atual: ")
-    console.log(currNode.state)
-    console.log("Estado Inicial: ")
-    console.log(initial) */
     if (match(currNode.state, initial)) {
       // se o estado nó atual casar com o inicial, então temos um caminho
       return createPath(currNode)
@@ -126,6 +121,5 @@ export function definePlan(
       })
   }
   // se chegou aqui é porque não alcançou o nó inicial e, portanto, não há plano possível.]
-  console.log("Deu Errado")
   return []
 }

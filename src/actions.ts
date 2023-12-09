@@ -23,6 +23,7 @@ const cacarArco: Action = {
   name: 'Caçar com Arco',
   precond: {
     semArco: false,
+    possuiAnimal: false
   },
   effects: {
     possuiAnimal: true,
@@ -33,7 +34,8 @@ const cacarArco: Action = {
 const cacarSemArco: Action = {
   name: 'Caçar Sem Arco',
   precond: {
-    semArco: true
+    semArco: true,
+    possuiAnimal: false
   },
   effects: {
     possuiAnimal: true
@@ -56,7 +58,8 @@ const pegarMachado: Action = {
 const cortarMachado: Action = {
   name: 'Cortar Lenha Com Machado',
   precond: {
-    semMachado: false
+    semMachado: false,
+    semLenha: true
   },
   effects: {
     semLenha: false,
@@ -67,7 +70,8 @@ const cortarMachado: Action = {
 const apanharGravetos: Action = {
   name: 'Apanhar Gravetos',
   precond: {
-    semMachado: true
+    semMachado: true,
+    semLenha: true,
   },
   effects: {
     semLenha: false,
@@ -78,7 +82,8 @@ const apanharGravetos: Action = {
 const acenderFogueira: Action = {
   name: 'Acender Fogueira',
   precond: {
-    semLenha: false
+    semLenha: false,
+    fogueiraAcesa: false
   },
   effects: {
     fogueiraAcesa: true
@@ -90,7 +95,8 @@ const assarAnimal: Action = {
   name: 'Assar Animal',
   precond: {
     possuiAnimal: true,
-    fogueiraAcesa: true
+    fogueiraAcesa: true,
+    alimentado: false
   },
   effects: {
     alimentado: true,

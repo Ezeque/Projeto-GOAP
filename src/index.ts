@@ -19,8 +19,6 @@ const goal: State = {
 
 const personagem = new Npc(state, actions)
 
-console.log(personagem.state)
-
 personagem.goal = goal
 
 while (personagem.plan.length > 0) {
