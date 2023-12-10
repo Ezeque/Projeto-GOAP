@@ -32,7 +32,7 @@ O estado inicial de mundo e npc é o seguinte:
 - alimentado: false
 
 
-Isso significa que o npc inicial sem arco, mas um arco está disponível, sem lenha e sem machado mas um machado está disponível, ele está sem fogueira e está com fome.
+Isso significa que o npc inicia sem arco, mas um arco está disponível, sem lenha e sem machado mas um machado está disponível, ele está sem fogueira e está com fome.
 
 Para se alimentar o npc precisa assar um animal, para isso ele precisa caçar um animal e acender uma fogueira. O npc pode caçar um animal com ou sem um arco, dependendo se existem arcos disponíveis e pode acender uma fogueira com gravetos ou com lenha, dependendo se existem machados disponíveis.
 
