@@ -42,6 +42,32 @@ O resultado obtido ao rodar o programa foi o seguinte:
 
 <img src="/imagens/resultado.PNG">
 
+O npc primeiro pegou um machado (custo 3), pois um machado estava disponível no início, depois cortou a lenha com o machado (custo 4) pois ele tinha um machado após a última ação, em seguida acendeu uma fogueira (custo 5) pois ele conseguiu lenha após a última ação, depois ele pegou um arco (custo 2) pois um arco estava disponível, e caçou um animal com o arco (custo 5) pois ele tem um arco e então assou o animal (custo 4) e se alimentou. O custo total desse caminho foi de 22.
+
+Vamos agora analisar qual será o resultado caso o npc inicie sem um arco disponível e comum machado disponível porém com já com lenha.. Sem o arco ele terá que caçar sem arco (custo 10), e não vai precisar acender uma fogueira, com isso o novo custo será de 14.
+
+O novo estado inicial de mundo e npc é o seguinte:
+
+- arcoDisponível: false
+
+- semArco: true
+
+- machadoDisponivel: true
+
+- semMachado: true
+
+- semLenha: false
+
+- fogueiraAcesa: false
+
+- alimentado: false
+
+O novo resultado é este:
+
+<img src="/imagens/resultado2.PNG">
+
+Como podemos ver, o resultado foi condizente com as previsões feitas.
+
 # Instruções
 
 Este exemplo usa os conceitos de GOAP ([Goal-Oriented Action Planning](https://alumni.media.mit.edu/~jorkin/goap.html)).
