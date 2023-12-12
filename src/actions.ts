@@ -46,7 +46,7 @@ const cacarSemArco: Action = {
 const pegarMachado: Action = {
   name: 'Pegar Machado',
   precond: {
-    machadoDisponive: true,
+    machadoDisponivel: true,
     semMachado: true
   },
   effects: {

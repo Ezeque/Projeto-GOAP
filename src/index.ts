@@ -6,7 +6,7 @@ const state: State = {
   arcoDisponivel: true,
   semArco: true,
   possuiAnimal: false,
-  machadoDisponivel: true,
+  machadoDisponivel: false,
   semMachado: true,
   semLenha: true,
   fogueiraAcesa: false,
